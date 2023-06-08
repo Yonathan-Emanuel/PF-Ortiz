@@ -1,0 +1,39 @@
+//main
+
+.Tienda {
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    padding: 30px 30px 70px;
+    width: 100%;
+    background-image: url(.././imagenes/tienda/tienda_fondo.png);
+    background-attachment: fixed;
+    h1{
+        text-align: center;
+        padding: 80px 0px 0px;
+    }
+    .container{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        .caja{
+            width: 270px;
+            border: 1px solid map-get($map: $colores-fuente, $key: primario);
+            padding: 20px;
+            p {
+                color: map-get($map: $colores-fuente, $key: primario);
+            }
+    
+            h4{
+                color: map-get($map: $colores-fuente, $key: secundario);
+                font-weight: 400;
+                padding: 15px 0px 0px;
+            }
+        
+            h3{
+                padding: 0px 0px 15px;
+            }
+            
+        }
+    }
+}
